@@ -1,0 +1,136 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+005-008 MAIN.leitura_an
+009-00C MAIN.leitura_cv
+00D-010 @PRINTF_L32D_73FPFPF.P1
+00D-00E @ITOF.P2
+00D     lcd_init.conta
+00D     @PSTRINGCN_73.P1
+00D-010 @ADDFF.P2
+00D     MAIN.@SCRATCH1
+00E     MAIN.@SCRATCH2
+00E     @PSTRINGCN_73.@SCRATCH1
+00F     MAIN.@SCRATCH3
+00F     @PSTRINGCN_73.@SCRATCH2
+010     MAIN.@SCRATCH4
+011-014 @ADDFF.P1
+011     @PRINTF_L32D_73FPFPF.P2
+011-014 @DIVFF.P3
+012     @PRINTF_L32D_73FPFPF.@SCRATCH1
+013     @PRINTF_L32D_73FPFPF.@SCRATCH2
+014     @PRINTF_L32D_73FPFPF.@SCRATCH3
+015-018 @DIVFF.P1
+015     @ADDFF.@SCRATCH1
+015     @PRINTF_L32D_73FPFPF.@SCRATCH4
+016     @ADDFF.@SCRATCH2
+016     @PRINTF_L32D_73FPFPF.@SCRATCH5
+017     @ADDFF.@SCRATCH3
+017     @PRINTF_L32D_73FPFPF.@SCRATCH6
+018     @ADDFF.@SCRATCH4
+018     @PRINTF_L32D_73FPFPF.@SCRATCH7
+019     @ADDFF.@SCRATCH5
+019     @DIVFF.@SCRATCH1
+019     @PRINTF_L32D_73FPFPF.@SCRATCH8
+01A     lcd.c
+01A-01D @MULFF.P1
+01A-01D @FTOSD.P2
+01A-01D @DIV3232.P3
+01A     @ADDFF.@SCRATCH6
+01A     @DIVFF.@SCRATCH2
+01B     lcd_pos_xy.x
+01B     @ADDFF.@SCRATCH7
+01B     @DIVFF.@SCRATCH3
+01C     lcd_pos_xy.y
+01C     @ADDFF.@SCRATCH8
+01C     @DIVFF.@SCRATCH4
+01D     lcd_pos_xy.endereco
+01D     @DIVFF.@SCRATCH5
+01E-021 @DIV3232.P1
+01E     lcd_envia_byte.endereco
+01E-021 @MULFF.P1
+01E     @DIVFF.@SCRATCH6
+01E     @FTOSD.@SCRATCH1
+01F     lcd_envia_byte.dado
+020     @delay_ms1.P1
+020     lcd_envia_byte.@SCRATCH1
+021     lcd_cmd.cmd
+022     @MULFF.@SCRATCH1
+022     @DIV3232.@SCRATCH1
+023     @MULFF.@SCRATCH2
+023     @DIV3232.@SCRATCH2
+024     @MULFF.@SCRATCH3
+024     @DIV3232.@SCRATCH3
+025     @DIV3232.@SCRATCH4
+026     @DIV3232.@SCRATCH5
+F83     PSP_DATA
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0014  @delay_ms1
+003C  lcd_cmd
+0076  lcd_envia_byte
+060C  lcd_pos_xy
+062E  lcd
+00B2  lcd_init
+08CC  MAIN
+011A  @ITOF
+0152  @ADDFF
+03BE  @MULFF
+04B0  @DIVFF
+0004  @const92
+0676  @PSTRINGCN_73
+0694  @FTOSD
+06D4  @DIV3232
+074E  @PRINTF_L32D_73FPFPF
+08CC  @cinit
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\cuki\Eletronica\Sensor Corrente\
+
+Project Files:
+    sensor corrente.c
+    ..\..\..\..\Program Files (x86)\PICC\devices\18f452.h
+    ..\..\..\..\Program Files (x86)\PICC\drivers\lcd_4bii.c
+
+Units:
+    C:\Users\cuki\Eletronica\Sensor Corrente\sensor corrente (main)
+
+Compiler Settings:
+    Processor:      PIC18F452
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      sensor corrente.err
+    Ext Symbols: sensor corrente.esym
+    INHX32:      sensor corrente.hex
+    Symbols:     sensor corrente.sym
+    List:        sensor corrente.lst
+    Debug/COFF:  sensor corrente.cof
+    Project:     sensor corrente.PJT
+    Call Tree:   sensor corrente.tre
+    Statistics:  sensor corrente.sta
